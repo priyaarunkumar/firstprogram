@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div clas="row">
+        <div class="col-md-12">
+            <div class="banner">
+                <div class="banner-text">
+                    <h1>Hello Todo</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form method="POST" style="text-align:center;">
+  {% csrf_token %}
+  {{ttform.as_p}}
+    <button type="submit">confirm</button>
+</form>
+{% endblock %}
+
+

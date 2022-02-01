@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid" xmlns="http://www.w3.org/1999/html">
+    <div clas="row">
+        <div class="col-md-12">
+            <div class="banner">
+                <div class="banner-text">
+                    <h1>Hello Todo</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<form method="POST" style="text-align:center;">
+      {% csrf_token %}
+<h3>are u sure want to delete</h3>
+      <br>
+<input type="submit">
+</form>
+{% endblock %}
